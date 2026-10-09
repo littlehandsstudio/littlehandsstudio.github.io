@@ -128,6 +128,15 @@ footer{width:100%;padding-top:18px;text-align:center;font-size:11px;letter-spaci
   }
 
   window.__ztLinks = { inApp: inApp, android: android, ios: ios, androidUrl: androidUrl };
+
+  // No computador: cada link abre em uma nova aba
+  if (!inApp && !android && !ios) {
+    var links = document.querySelectorAll('a.action-link');
+    for (var i = 0; i < links.length; i++) {
+      links[i].target = '_blank';
+      links[i].rel = 'noopener';
+    }
+  }
   if (!inApp || !(android || ios)) return;
 
   document.addEventListener('click', function (e) {
