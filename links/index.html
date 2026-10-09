@@ -87,8 +87,8 @@ footer{width:100%;padding-top:18px;text-align:center;font-size:11px;letter-spaci
 </main>
 <script>
 /* Dentro do Instagram/Facebook: tenta abrir cada link no app correspondente;
-   se o app não abrir, manda para o navegador do aparelho (fora do Instagram);
-   em último caso, abre ali mesmo. No computador, abre em nova aba. */
+   se o app não abrir, abre o link ali mesmo, no navegador do Instagram.
+   No computador, abre em nova aba. */
 (function () {
   var ua = navigator.userAgent || '';
   var inApp = /Instagram|FBAN|FBAV|FB_IAB|Threads|Barcelona/i.test(ua);
@@ -117,7 +117,6 @@ footer{width:100%;padding-top:18px;text-align:center;font-size:11px;letter-spaci
     var left = false, timer = null;
     function onHide() { if (document.hidden) { left = true; clearTimeout(timer); } }
     document.addEventListener('visibilitychange', onHide);
-    window.addEventListener('pagehide', onHide);
     var i = 0;
     (function next() {
       if (left || i >= steps.length) return;
@@ -133,15 +132,13 @@ footer{width:100%;padding-top:18px;text-align:center;font-size:11px;letter-spaci
       var steps = [];
       var pkg = a.getAttribute('data-android');
       if (pkg && pkg !== 'com.android.chrome') steps.push(intentUrl(href, pkg)); // app
-      steps.push(intentUrl(href, 'com.android.chrome'));                          // Chrome
-      steps.push(href);                                                            // último recurso
+      steps.push(href);                                                            // sem app: abre aqui
       return steps;
     }
     var s = [];
     var scheme = a.getAttribute('data-ios');
     if (scheme) s.push(scheme);         // app
-    s.push('x-safari-' + href);         // Safari (iOS 17+)
-    s.push(href);                       // último recurso
+    s.push(href);                       // sem app: abre aqui
     return s;
   }
   api.stepsFor = stepsFor;
