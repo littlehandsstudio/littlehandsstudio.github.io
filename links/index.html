@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zodiac Trek — Little Hands Studio</title>
+<meta name="description" content="12 signos. 1 sobrevivente. Arcade roguelite bullet hell para celular. Baixe grátis no Google Play.">
+<meta name="theme-color" content="#08031c">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://littlehandsstudio.github.io/links/">
+<meta property="og:title" content="Zodiac Trek — Little Hands Studio">
+<meta property="og:description" content="12 signos. 1 sobrevivente. Baixe grátis no Google Play.">
+<meta property="og:image" content="https://littlehandsstudio.github.io/links/img/og.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--midnight:#08031c;--gold:#e8bf5f;--gold-pale:#f7dc94;--ivory:#f7f2e6}
+*{box-sizing:border-box}
+html{background:var(--midnight);-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;color:var(--ivory);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:radial-gradient(circle at 50% 13%,rgba(102,53,207,.34),transparent 23%),radial-gradient(circle at 10% 52%,rgba(64,20,137,.28),transparent 30%),radial-gradient(circle at 91% 35%,rgba(43,19,112,.45),transparent 29%),linear-gradient(165deg,#040114 0%,#0b0327 46%,#17052d 100%);
+background-attachment:fixed;overflow-x:hidden}
+.stars{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.7;
+background-image:radial-gradient(circle,rgba(255,255,255,.9) 0 1px,transparent 1.25px),radial-gradient(circle,rgba(232,191,95,.9) 0 .8px,transparent 1.1px),radial-gradient(circle,rgba(121,63,236,.85) 0 1px,transparent 1.35px);
+background-position:8px 22px,47px 76px,124px 40px;background-size:87px 87px,139px 139px,211px 211px;
+-webkit-mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.85) 55%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.85) 55%,transparent 100%)}
+.page{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;min-height:100vh;min-height:100dvh;padding:calc(28px + env(safe-area-inset-top)) 18px calc(18px + env(safe-area-inset-bottom))}
+.col{width:100%;max-width:418px;flex:1;display:flex;flex-direction:column;align-items:center}
+.hero-art{width:100%;overflow:hidden;border:1px solid rgba(232,191,95,.38);border-radius:16px;background:#08031c;box-shadow:0 10px 30px rgba(0,0,0,.33),0 0 26px rgba(104,45,204,.22)}
+.hero-art img{display:block;width:100%;height:auto}
+.tagline{margin:14px 0 0;text-align:center;color:var(--gold-pale);font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:16px;letter-spacing:.09em;line-height:1.4;text-shadow:0 0 15px rgba(232,191,95,.18)}
+.support{max-width:346px;margin:8px auto 0;text-align:center;font-size:14px;line-height:1.5;color:rgba(247,242,230,.85)}
+nav{width:100%;display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.action-link{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;padding:12px 18px;border:1px solid rgba(232,191,95,.88);border-radius:12px;color:var(--ivory);background:rgba(19,8,56,.7);text-align:center;text-decoration:none;font-size:16px;font-weight:700;line-height:1.25;-webkit-tap-highlight-color:rgba(232,191,95,.25);touch-action:manipulation;cursor:pointer}
+.action-link svg{width:20px;height:20px;flex:0 0 20px;color:var(--gold)}
+.action-link:active{background:rgba(232,191,95,.2)}
+@media(hover:hover){.action-link:hover{background:rgba(232,191,95,.14)}}
+.primary-link{min-height:60px;font-size:17px;color:#160a35;background:linear-gradient(180deg,#f4d575 0%,#dfad49 100%);box-shadow:0 8px 21px rgba(232,191,95,.26)}
+.primary-link svg{color:#160a35}
+.heroes{width:100%;margin-top:28px;padding-top:14px;border-top:1px solid rgba(232,191,95,.2);text-align:center}
+.heroes p{margin:0 0 10px;color:rgba(232,191,95,.8);font-family:"Cinzel",Georgia,serif;font-weight:700;font-size:10px;letter-spacing:.18em}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:2px;align-items:end;filter:drop-shadow(0 0 8px rgba(140,70,244,.36))}
+.hero-figure{display:flex;align-items:flex-end;justify-content:center}
+.zodiac-character{display:block;width:100%;height:auto;aspect-ratio:210/240}
+footer{width:100%;padding-top:18px;text-align:center;font-size:11px;letter-spacing:.05em;color:rgba(247,242,230,.55)}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<main class="page">
+  <div class="col">
+    <header style="width:100%">
+      <div class="hero-art"><picture><source srcset="img/banner.webp" type="image/webp"><img src="img/banner.jpg" width="1024" height="500" alt="Zodiac Trek — Arcade Roguelite"></picture></div>
+      <p class="tagline">12 SIGNOS. 1 SOBREVIVENTE.</p>
+      <p class="support">Arcade roguelite bullet hell para celular • por Little Hands Studio 🇧🇷</p>
+    </header>
+    <nav aria-label="Links oficiais">
+      <a class="action-link primary-link" href="https://play.google.com/store/apps/details?id=com.littlehandsstudio.zodiactrek"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" d="M4.2 2.8 19.5 12 4.2 21.2V2.8Z"/><path fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" d="m4.8 3.2 10.1 6.1m-10.1 11.5 10.1-6.1m-3.3-2.7 5.8-3.5m-5.8 7 5.8 3.5"/></svg><span>Baixe no Google Play</span></a>
+      <a class="action-link" href="https://www.youtube.com/@LittleHandsStudio-i3y"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/></svg><span>Trailer no YouTube</span></a>
+      <a class="action-link" href="https://discord.gg/9MqUhQepB"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.7 5.1A18 18 0 0 0 15.3 3l-.6 1.2a16 16 0 0 0-5.4 0L8.7 3a18 18 0 0 0-4.4 2.1C1.5 9.2.7 13.2 1.1 17.2a18 18 0 0 0 5.4 2.7l1.2-1.9-1.9-.9.5-.4c3.7 1.7 7.7 1.7 11.4 0l.5.4-1.9.9 1.2 1.9a18 18 0 0 0 5.4-2.7c.5-4.6-.8-8.6-3.2-12.1ZM8.8 14.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm6.4 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg><span>Entre no Discord</span></a>
+      <a class="action-link" href="https://www.tiktok.com/@littlehandsst"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.6 6.2a5.5 5.5 0 0 1-3.4-4.7V1h-4.1v15.1a2.9 2.9 0 1 1-2.9-2.9c.5 0 1 .1 1.4.4V9.4a7 7 0 1 0 5.600 6.800V8.500a9.500 9.500 0 0 0 5.500 1.800V6.200h-2.100Z"/></svg><span>TikTok</span></a>
+      <a class="action-link" href="https://www.reddit.com/user/Little-Hands-Studio/"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3a2 2 0 0 0-1.9 2.6c-2.5.3-4.7 1.3-6 2.8a2.1 2.1 0 1 0-1.1 3.9c-.1.4-.2.8-.2 1.2 0 3.6 4.1 6.5 9.2 6.5s9.2-2.9 9.2-6.5c0-.4-.1-.8-.2-1.2a2.1 2.1 0 1 0-1.1-3.9c-1.4-1.5-3.6-2.5-6-2.8L15 3.7l2.7.6a1.5 1.5 0 1 0 .3-1.4l-3.8-.8a.8.8 0 0 0-.9.6l-.8 3A14 14 0 0 0 12 5a2 2 0 0 0 0-2Zm-3 9a1.4 1.4 0 1 1 0 2.8A1.4 1.4 0 0 1 9 12Zm6 0a1.4 1.4 0 1 1 0 2.8 1.4 1.4 0 0 1 0-2.8Zm-6 4.2a5 5 0 0 0 6 0 .7.7 0 1 1 1 1 6.5 6.5 0 0 1-8 0 .7.7 0 1 1 1-1Z"/></svg><span>Reddit</span></a>
+      <a class="action-link" href="https://x.com/LittleHandsSt"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.4l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2Zm-1.1 18h1.7L7.2 3.9H5.4L17.8 20Z"/></svg><span>X (Twitter)</span></a>
+      <a class="action-link" href="https://littlehandsstudio.my.canva.site/"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2.8 12h18.4M12 2.5a15 15 0 0 1 0 19M12 2.5a15 15 0 0 0 0 19" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Site do estúdio</span></a>
+      </nav>
+    <section class="heroes" aria-label="Heróis dos signos">
+      <p>12 HERÓIS • 12 SIGNOS</p>
+      <div class="grid">
+        <div class="hero-figure"><img class="zodiac-character" src="img/aries.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/taurus.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/gemini.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/cancer.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/leo.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/virgo.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/libra.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/scorpio.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/sagittarius.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/capricorn.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/aquarius.png" alt="" width="210" height="240"></div>
+        <div class="hero-figure"><img class="zodiac-character" src="img/pisces.png" alt="" width="210" height="240"></div>
+        </div>
+    </section>
+  </div>
+  <footer>© Little Hands Studio • Feito no Brasil</footer>
+</main>
+</body>
+</html>
