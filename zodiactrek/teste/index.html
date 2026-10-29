@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Zodiac Trek – Baixe grátis no Google Play</title>
+<meta name="description" content="Bullet hell roguelite para celular. 12 signos, 1 sobrevivente. Baixe grátis no Google Play.">
+<meta name="theme-color" content="#08031c">
+<link rel="icon" href="/links/img/favicon.png">
+<noscript><meta http-equiv="refresh" content="0;url=https://play.google.com/store/apps/details?id=com.littlehandsstudio.zodiactrek&amp;referrer=utm_source%3Dmeta%26utm_medium%3Dpaid%26utm_campaign%3Dzt_teste_meta%26utm_content%3Dvideo_geral"></noscript>
+<script>
+/* Lê ?c= (lista fixa), monta o link do Play com o referrer URL-encoded
+   e redireciona no celular. No computador a pessoa fica na página e clica no botão. */
+(function () {
+  var PLAY = 'https://play.google.com/store/apps/details?id=com.littlehandsstudio.zodiactrek';
+  var ACEITOS = { exagerado: 1, moderno: 1 };
+  var c = '';
+  try { c = (new URLSearchParams(location.search).get('c') || '').trim().toLowerCase(); } catch (e) {}
+  if (!ACEITOS.hasOwnProperty(c)) c = 'geral';
+  var referrer = 'utm_source=meta&utm_medium=paid&utm_campaign=zt_teste_meta&utm_content=video_' + c;
+  var link = PLAY + '&referrer=' + encodeURIComponent(referrer);
+  window.__ztPlayLink = link;
+  var ua = navigator.userAgent || '';
+  var mobile = /Android|iPhone|iPad|iPod|Mobile/i.test(ua) ||
+               (/Macintosh/i.test(ua) && 'ontouchend' in document);
+  if (mobile) window.location.replace(link);
+})();
+</script>
+<style>
+:root{--midnight:#08031c;--gold:#e8bf5f;--gold-pale:#f7dc94;--ivory:#f7f2e6}
+*{box-sizing:border-box}
+html{background:var(--midnight);-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;color:var(--ivory);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+background:radial-gradient(circle at 50% 13%,rgba(102,53,207,.34),transparent 23%),radial-gradient(circle at 10% 52%,rgba(64,20,137,.28),transparent 30%),radial-gradient(circle at 91% 35%,rgba(43,19,112,.45),transparent 29%),linear-gradient(165deg,#040114 0%,#0b0327 46%,#17052d 100%);
+background-attachment:fixed;overflow-x:hidden}
+.page{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;min-height:100dvh;padding:calc(28px + env(safe-area-inset-top)) 16px calc(18px + env(safe-area-inset-bottom))}
+.col{width:100%;max-width:418px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-art{width:100%;overflow:hidden;border:1px solid rgba(232,191,95,.38);border-radius:16px;background:var(--midnight);box-shadow:0 10px 30px rgba(0,0,0,.33),0 0 26px rgba(104,45,204,.22)}
+.hero-art img{display:block;width:100%;height:auto}
+h1{margin:20px 0 0;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:30px;letter-spacing:.08em;color:var(--gold-pale);text-shadow:0 0 15px rgba(232,191,95,.2)}
+.tagline{margin:8px 0 0;font-size:16px;line-height:1.5;color:rgba(247,242,230,.88)}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;margin-top:24px;padding:14px 18px;border:1px solid rgba(232,191,95,.88);border-radius:12px;color:#160a35;background:linear-gradient(180deg,#f4d575 0%,#dfad49 100%);box-shadow:0 8px 21px rgba(232,191,95,.26);text-decoration:none;font-size:18px;font-weight:700;-webkit-tap-highlight-color:rgba(232,191,95,.25);touch-action:manipulation}
+.cta svg{width:22px;height:22px;flex:0 0 22px}
+.cta:focus-visible{outline:3px solid var(--ivory);outline-offset:3px}
+@media(hover:hover){.cta:hover{filter:brightness(1.06)}}
+.note{margin:14px 0 0;font-size:13px;color:rgba(247,242,230,.6)}
+footer{margin-top:28px;font-size:11px;letter-spacing:.05em;color:rgba(247,242,230,.55)}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="col">
+    <div class="hero-art"><picture><source srcset="/links/img/banner.webp" type="image/webp"><img src="/links/img/banner.jpg" width="1024" height="500" alt="Zodiac Trek"></picture></div>
+    <h1>Zodiac Trek</h1>
+    <p class="tagline">Bullet hell roguelite para celular. 12 signos, 1 sobrevivente.</p>
+    <a id="play" class="cta" href="https://play.google.com/store/apps/details?id=com.littlehandsstudio.zodiactrek&amp;referrer=utm_source%3Dmeta%26utm_medium%3Dpaid%26utm_campaign%3Dzt_teste_meta%26utm_content%3Dvideo_geral"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M4.2 2.8 19.5 12 4.2 21.2V2.8Z"/></svg><span>Baixar no Google Play</span></a>
+    <noscript><p class="note">Abrindo o Google Play… Se não abrir, toque no botão acima.</p></noscript>
+    <p class="note">Grátis para Android.</p>
+    <footer>© Little Hands Studio • Feito no Brasil</footer>
+  </div>
+</main>
+<script>
+(function () {
+  var a = document.getElementById('play');
+  if (a && window.__ztPlayLink) a.href = window.__ztPlayLink;
+})();
+</script>
+</body>
+</html>
